@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Loudmouth Collective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- basic styles -->
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <%= stylesheet_link_tag "bootstrap-responsive.min.css" %>
+    
+    <%= yield_content :head %>
+
+    <!-- html5 shim for IE -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    
+    <%= partial :navbar, :locals => {:page_name => data.page.name} %>
+    
+    <div class="container">
+      
+      <%= yield %>
+      
+      <hr>
+      <footer>
+        <p>© Loudmouth Collective 2012</p>
+        <p>Made with and inspired by <a href="http://getbootstrap.com/">Bootstrap</a>. Icons from Glyphicons Free, licensed under CC BY 3.0.</p>
+      </footer>
+    </div> 
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+  </body>
+</html>
