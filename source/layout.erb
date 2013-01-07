@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
     <meta charset="utf-8">
     <title>Loudmouth Collective</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta property="og:title" content="Loudmouth Collective" />
-<meta property="og:type" content="non_profit" />
-<meta property="og:url" content="http://loudmouthcollective.com" />
-<meta property="og:image" content="https://sphotos-b.xx.fbcdn.net/hphotos-snc6/208878_232725450178252_623340800_n.jpg" />
-<meta property="og:site_name" content="Loudmouth Collective" />
-<meta property="fb:app_id" content="399854306766158" />
+    <meta property="og:type" content="non_profit" />
+    <meta property="og:url" content="http://loudmouthcollective.com" />
+    <meta property="og:image" content="https://sphotos-b.xx.fbcdn.net/hphotos-snc6/208878_232725450178252_623340800_n.jpg" />
+    <meta property="og:site_name" content="Loudmouth Collective" />
+    <meta property="fb:app_id" content="399854306766158" />
 
     <!-- basic styles -->
     <link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css" />
@@ -46,6 +47,8 @@
       })();
 
     </script>
+
+    <%= yield_content :head %>
   </head>
 
   <body>
